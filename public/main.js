@@ -14,10 +14,10 @@ function sendReq(e) {
   e.preventDefault();
   $.ajax({
     type:'POST',
-    url: '/',
+    url: '/convert',
     data: {markdown: $('#markdown').val()}
   })
   .done(function(data){
     appendOutput(data);
-  })
+  });
 }
