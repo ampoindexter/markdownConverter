@@ -17,18 +17,12 @@ app.get('/test', function(req, res) {
   console.log(marked('I am using __markdown__.'));
 });
 
-// var markdownString;
-// marked(markdownString, function (err, outputText) {
-//   if (err) {
-//     throw err;
-//   } else {
-//     console.log(outputText);
-//   }
-// });
 
 app.post('/', function(req, res) {
-  var outputText = req.body;
-  console.log(marked(outputText));
+  var inputText = req.body.markdown.toString();
+  var outputText = marked(inputText);
+  console.log(outputText);
+  res.send(outputText);
 });
 
 app.listen(3000);
