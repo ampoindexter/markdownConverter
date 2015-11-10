@@ -2,6 +2,7 @@ var bodyParser = require('body-parser');
 var express = require('express');
 var marked = require('marked');
 var morgan = require('morgan');
+var port = process.env.PORT || 3000;
 
 var app = express();
 app.use(express.static('public'));
@@ -25,5 +26,5 @@ app.post('/convert', function(req, res) {
   res.send(outputText);
 });
 
-app.listen(PORT);
+app.listen(port);
 // console.log('Listening on port 3000');
