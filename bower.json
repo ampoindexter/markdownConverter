@@ -1,0 +1,24 @@
+{
+  "name": "markdownconverter",
+  "description": "convert markdown to HTML",
+  "main": "app.js",
+  "authors": [
+    "Alicia Poindexter"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ampoindexter/markdownConverter",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}
