@@ -1,0 +1,9 @@
+body {
+  background-color: red;
+}
+
+textarea {
+  width: 40%;
+  height: 300px;
+  display: inline;
+}

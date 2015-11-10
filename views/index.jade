@@ -1,0 +1,20 @@
+html
+  head
+    title Markdown Converter
+    link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/style.css', rel='stylesheet')
+  body
+    .container
+      .row
+        .col-md-6
+          p.
+            Enter markdown here
+          form(method='post')
+            textarea#markdown( name='markdown' )
+            input.btn.btn-primary(type='submit')
+        .col-md-6
+          p.
+            HTML output
+          textarea#output( name='html' )
+
+    script(type='text/javascript', src='/main.js')
