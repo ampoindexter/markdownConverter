@@ -16,10 +16,6 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-// app.get('/test', function(req, res) {
-//   console.log(marked('I am using __markdown__.'));
-// });
-
 app.post('/convert', function(req, res) {
   var inputText = req.body.markdown.toString();
   var outputText = marked(inputText);
