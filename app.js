@@ -1,3 +1,5 @@
+'use strict';
+
 var bodyParser = require('body-parser');
 var express = require('express');
 var marked = require('marked');
@@ -26,5 +28,6 @@ app.post('/convert', function(req, res) {
   res.send(outputText);
 });
 
-app.listen(port);
-// console.log('Listening on port 3000');
+app.listen(PORT, function(){
+  console.log('Listening on port ', PORT);
+});
