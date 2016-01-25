@@ -2,7 +2,7 @@ html
   head
     title Markdown Converter
     link(href='bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
-    link(href='/css/style.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
   body
     .container
       .row
@@ -11,10 +11,11 @@ html
             Enter markdown here
           form(method='post')
             textarea#markdown( name='markdown' )
-            input.btn.btn-primary(type='submit')
+            input.btn.btn-success(type='submit')
         .col-md-6
           p.
             HTML output
           #output( name='html' )
     script(type='text/javascript', src='bower_components/jquery/dist/jquery.min.js')
-    script(type='text/javascript', src='/main.js')
+    script(type='text/javascript', src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
+    script(type='text/javascript', src='main.js')

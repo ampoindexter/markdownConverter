@@ -3,7 +3,7 @@ body {
 }
 
 textarea {
-  width: 40%;
+  width: 400px;
   height: 300px;
   display: inline;
 }
