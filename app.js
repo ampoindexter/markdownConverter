@@ -19,7 +19,6 @@ app.get('/', function(req, res) {
 app.post('/convert', function(req, res) {
   var inputText = req.body.markdown.toString();
   var outputText = marked(inputText);
-  console.log(outputText);
   res.send(outputText);
 });
 

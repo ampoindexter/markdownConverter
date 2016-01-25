@@ -2,4 +2,4 @@
 
 ## By Alicia Poindexter
 
-Deployed at https://mighty-forest-8281.herokuapp.com/ but it isn't working right now for some reason... It was fine earlier, I dunno. Not part of MVP anyway.
+Deployed at https://mighty-forest-8281.herokuapp.com/ but it is kind of finicky at the moment, so please test on local server.
