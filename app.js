@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var express = require('express');
 var marked = require('marked');
 var morgan = require('morgan');
-var port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 var app = express();
 app.use(express.static('public'));
@@ -16,10 +16,9 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-app.get('/test', function(req, res) {
-  console.log(marked('I am using __markdown__.'));
-});
-
+// app.get('/test', function(req, res) {
+//   console.log(marked('I am using __markdown__.'));
+// });
 
 app.post('/convert', function(req, res) {
   var inputText = req.body.markdown.toString();
